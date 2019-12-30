@@ -1,4 +1,4 @@
-# CPU Functional Components
+****# CPU Functional Components
 
 ## The Basics
 
@@ -64,3 +64,12 @@
 - There are a limited number of them at your disposal, usually 8, 16, or 32, depending on the CPU
 - They have fixed names, e.g. R0, R1, or EAX, EBX, etc. depending on the CPU
 - Many CPUs can _only_ perform math operations on registers which must be loaded from RAM first. (The x86 family can often perform math on registers quickly, or RAM slowly.)
+
+### CPU Instructions
+
+- Are also stored in RAM with other data
+- Are actually just numbers
+- Humans often use mneumonics to refer to the instruction in a human-readable way
+- The CPU keeps track of the address of the currently-executing instruction in RAM and performs different actions based on the instruction found there
+- The address of the currently-executing instruction is head in a special register called the _program counter_ (PC)
+- CPUs usually have a significant number of instructions, around 50-200
